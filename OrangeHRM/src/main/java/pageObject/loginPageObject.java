@@ -8,15 +8,15 @@ import org.openqa.selenium.WebElement;
 
 public class loginPageObject {
 
-WebDriver driver;
-String nametext;
-String passtext;
+public WebDriver driver;
+public String nametext;
+public String passtext;
 public loginPageObject(WebDriver driver)
 {
 	this.driver=driver;
 }
 
-By name = By.xpath("//p[@class='oxd-text oxd-text--p'][1]");
+By name = By.xpath("//p[text()='Username : Admin']");
 By pass = By.xpath("//p[@class='oxd-text oxd-text--p'][2]");
 By username =  By.xpath("//input[@placeholder='Username']");
 By password = By.xpath("//input[@placeholder='Password']");
@@ -27,14 +27,23 @@ By forgotpass = By.cssSelector(".orangehrm-login-forgot-header");
 By resetPasstext = By.cssSelector(".orangehrm-forgot-password-title");
 By resetPassmess = By.xpath("//p[@class='oxd-text oxd-text--p']");
 By resetsuccesstext = By.cssSelector(".orangehrm-forgot-password-title");
+By resetemailmsg = By.xpath("(//p[@class='oxd-text oxd-text--p'])[1]");
+By reseteNewPassMsg = By.xpath("(//p[@class='oxd-text oxd-text--p'])[2]");
+By resetNote = By.xpath("//p[text()='Note: ']");
+By resetNoteMsg= By.xpath("//p[text()='Note: ']/following-sibling::p");
 
-
+public void getname()
+{
+	String nm=driver.findElement(name).getText();
+	
+	nametext=nm.split(": ")[1];
+	//System.out.println("Admin : "+nametext);
+}
 
 public void getusername()
 {
-	String nm=driver.findElement(name).getText();
-	nametext=nm.split(": ")[1];
-	driver.findElement(username).sendKeys(nametext);
+	
+	 driver.findElement(username).sendKeys(nametext);;
 }
 
 public void getpassword()
@@ -86,5 +95,22 @@ public String getresetsuccesstext()
 	return driver.findElement(resetsuccesstext).getText();
 }
 
+public String getresetemailmsg()
+{
+	return driver.findElement(resetemailmsg).getText();
+}
 
+public String getresetNewPassMsg()
+{
+	return driver.findElement(reseteNewPassMsg).getText();
+}
+
+public String getresetNote()
+{
+	return driver.findElement(resetNote).getText();
+}
+public String getresetNoteMsg()
+{
+	return driver.findElement(resetNoteMsg).getText();
+}
 }

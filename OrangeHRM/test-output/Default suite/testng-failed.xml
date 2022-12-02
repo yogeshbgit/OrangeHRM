@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.loginPage">
+      <class name="tests.ForgotPassword">
         <methods>
-          <include name="validatefogotpassword"/>
-          <include name="validateLoginTittle"/>
-          <include name="teardown"/>
           <include name="initializer"/>
+          <include name="validateForgotPasswordLink"/>
         </methods>
-      </class> <!-- tests.loginPage -->
+      </class> <!-- tests.ForgotPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

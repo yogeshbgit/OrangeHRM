@@ -39,21 +39,6 @@ public class loginPage extends BaseRepository {
 	
 	
 	@Test(priority=2)
-	public void validatefogotpassword()
-	{
-		String text = lp.getforgotpasstext();
-		Assert.assertEquals(text, "Forgot your password?","forgot password validation failed...");
-		System.out.println("forget password text:"+text);
-	/*	lp.getforgetpasslink();
-		Assert.assertEquals(lp.getresetpasstext(), "Reset Password","Reset password validation failed...");
-		String resetmess = "Please enter your username to identify your account to reset your password";
-		Assert.assertEquals(lp.getresetpassmess(), resetmess,"Reset Message validation failed...");
-		lp.getusername();
-		lp.getloginbutton();
-		Assert.assertEquals(lp.getresetsuccesstext(), "Reset Password link sent successfully","Reset Successful validation failed");*/
-	}
-	
-	@Test(priority=3)
 	public void validateAllLinksTittle()
 	{
 		List<WebElement> alllinks = lp.getallinks();
@@ -73,9 +58,10 @@ public class loginPage extends BaseRepository {
 		driver.switchTo().window(parendwindow);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void validateLogin()
 	{
+		lp.getname();
 		lp.getusername();
 		lp.getpassword();
 		lp.getloginbutton();
