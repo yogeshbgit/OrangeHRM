@@ -1,11 +1,15 @@
 package Resource;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -34,6 +38,15 @@ public class BaseRepository {
 			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		}
 		return driver;
+	}
+	public String getScreenshotPath(String methodname,WebDriver driver) throws IOException
+	{
+		
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	     String  destinationfile = System.getProperty("user.dir")+"\\ExtentReports\\"+methodname+".png";
+	     FileUtils.copyFile(scrFile, new File(destinationfile));
+	     
+		 return destinationfile;
 	}
 
 }

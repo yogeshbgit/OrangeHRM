@@ -1,6 +1,8 @@
 package tests;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle.Control;
@@ -19,9 +21,9 @@ import pageObject.loginPageObject;
 
 public class loginPage extends BaseRepository {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	loginPageObject lp;
-	String parendwindow;
+	public String parendwindow;
 	@BeforeTest
 	public void initializer() throws IOException
 	{
@@ -34,7 +36,7 @@ public class loginPage extends BaseRepository {
 	public void validateLoginTittle()
 	{
 		
-		Assert.assertEquals(lp.getlogintitle(), "Login","Login Title validation failed...");
+		Assert.assertEquals(lp.getlogintitle(), "Login","Login Title validation failed");
 	}
 	
 	
@@ -42,20 +44,38 @@ public class loginPage extends BaseRepository {
 	public void validateAllLinksTittle()
 	{
 		List<WebElement> alllinks = lp.getallinks();
+		
 		for(WebElement link:alllinks)
 		{
 			String ctr = Keys.chord(Keys.CONTROL,Keys.ENTER);
 			link.sendKeys(ctr);
 		}
+		List<String> explinkstext = new ArrayList<>();
+		explinkstext.add("OrangeHRM");
+		explinkstext.add("OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM");
+		explinkstext.add("OrangeHRM (@orangehrm) / Twitter");
+		explinkstext.add("OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ | Facebook");
+		explinkstext.add("Sign In | LinkedIn");
+		explinkstext.add("OrangeHRM Inc - YouTube");
+		
+		List<String> actlinkstext = new ArrayList<>();
+		
 	Set<String> windowhandles = driver.getWindowHandles();
 	Iterator<String> it = windowhandles.iterator();
 		while(it.hasNext())
 		{
 			driver.switchTo().window(it.next());
+			actlinkstext.add(driver.getTitle());
 			System.out.println("titles : "+driver.getTitle());
+			
 		}
 		
 		driver.switchTo().window(parendwindow);
+		Collections.sort(explinkstext);
+		Collections.sort(actlinkstext);
+		System.out.println("Actual link list : "+actlinkstext);
+		System.out.println("Expected link list : "+explinkstext);
+		Assert.assertEquals(actlinkstext, explinkstext,"Links text validation failed");
 	}
 	
 	@Test(priority=3)

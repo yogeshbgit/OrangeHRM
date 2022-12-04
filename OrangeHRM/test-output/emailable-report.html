@@ -9,38 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">299,072</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">123,301</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ForgotPassword</td><td><a href="#m0">validateForgotPasswordLink</a></td><td rowspan="1">1669996920818</td><td rowspan="1">8269</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ForgotPassword</td><td><a href="#m1">validateForgotPasswordText</a></td><td rowspan="1">1669996920672</td><td rowspan="1">144</td></tr><tr class="passedodd"><td rowspan="3">tests.loginPage</td><td><a href="#m2">validateAllLinksTittle</a></td><td rowspan="1">1669996695175</td><td rowspan="1">176241</td></tr><tr class="passedodd"><td><a href="#m3">validateLogin</a></td><td rowspan="1">1669996871419</td><td rowspan="1">49250</td></tr><tr class="passedodd"><td><a href="#m4">validateLoginTittle</a></td><td rowspan="1">1669996693461</td><td rowspan="1">1699</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.loginPage</td><td><a href="#m0">validateAllLinksTittle</a></td><td rowspan="1">1670155833573</td><td rowspan="1">72884</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.loginPage</td><td><a href="#m1">validateLogin</a></td><td rowspan="1">1670155909534</td><td rowspan="1">15521</td></tr><tr class="passedeven"><td><a href="#m2">validateLoginTittle</a></td><td rowspan="1">1670155832234</td><td rowspan="1">1328</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.ForgotPassword#validateForgotPasswordLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Username : Admin&apos;]&quot;}
-  (Session info: chrome=107.0.5304.108)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
-System info: host: &apos;DESKTOP-9OOOF17&apos;, ip: &apos;192.168.50.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a90fc2b3afb1f169c01c33ae58828115, findElement {using=xpath, value=//p[text()=&apos;Username : Admin&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56852}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56852/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a90fc2b3afb1f169c01c33ae58828115
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
-	at pageObject.loginPageObject.getname(loginPageObject.java:37)
-	at pageObject.loginPageObject.getusername(loginPageObject.java:45)
-	at tests.ForgotPassword.validateForgotPasswordLink(ForgotPassword.java:43)
+<h2>Test</h2><h3 id="m0">tests.loginPage#validateAllLinksTittle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Links text validation failed: Lists differ at element [2]: OrangeHRM - World&apos;s Most Popular Opensource HRIS | Secaucus NJ != OrangeHRM - World&apos;s Most Popular Opensource HRIS | Secaucus NJ | Facebook expected [OrangeHRM - World&apos;s Most Popular Opensource HRIS | Secaucus NJ] but found [OrangeHRM - World&apos;s Most Popular Opensource HRIS | Secaucus NJ | Facebook]
+	at tests.loginPage.validateAllLinksTittle(loginPage.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.ForgotPassword#validateForgotPasswordText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.loginPage#validateAllLinksTittle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.loginPage#validateLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.loginPage#validateLoginTittle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.loginPage#validateLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.loginPage#validateLoginTittle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,84 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-02T21:27:29 IST" name="Suite" finished-at="2022-12-02T21:32:28 IST" duration-ms="299072">
+  <suite started-at="2022-12-04T17:40:12 IST" name="Suite" finished-at="2022-12-04T17:42:15 IST" duration-ms="123301">
     <groups>
     </groups>
-    <test started-at="2022-12-02T21:27:29 IST" name="Test" finished-at="2022-12-02T21:32:28 IST" duration-ms="299072">
+    <test started-at="2022-12-04T17:40:12 IST" name="Test" finished-at="2022-12-04T17:42:15 IST" duration-ms="123301">
       <class name="tests.loginPage">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:tests.loginPage@29215f06]" started-at="2022-12-02T21:27:49 IST" name="initializer" finished-at="2022-12-02T21:28:12 IST" duration-ms="23259" status="PASS">
+        <test-method is-config="true" signature="initializer()[pri:0, instance:tests.loginPage@a3d9978]" started-at="2022-12-04T17:40:12 IST" name="initializer" finished-at="2022-12-04T17:40:32 IST" duration-ms="19616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializer -->
-        <test-method signature="validateLoginTittle()[pri:1, instance:tests.loginPage@29215f06]" started-at="2022-12-02T21:28:13 IST" name="validateLoginTittle" finished-at="2022-12-02T21:28:15 IST" duration-ms="1699" status="PASS">
+        <test-method signature="validateLoginTittle()[pri:1, instance:tests.loginPage@a3d9978]" started-at="2022-12-04T17:40:32 IST" name="validateLoginTittle" finished-at="2022-12-04T17:40:33 IST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginTittle -->
-        <test-method signature="validateAllLinksTittle()[pri:2, instance:tests.loginPage@29215f06]" started-at="2022-12-02T21:28:15 IST" name="validateAllLinksTittle" finished-at="2022-12-02T21:31:11 IST" duration-ms="176241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAllLinksTittle -->
-        <test-method signature="validateLogin()[pri:3, instance:tests.loginPage@29215f06]" started-at="2022-12-02T21:31:11 IST" name="validateLogin" finished-at="2022-12-02T21:32:00 IST" duration-ms="49250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.loginPage@29215f06]" started-at="2022-12-02T21:32:09 IST" name="teardown" finished-at="2022-12-02T21:32:28 IST" duration-ms="19099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.loginPage -->
-      <class name="tests.ForgotPassword">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:tests.ForgotPassword@72e5a8e]" started-at="2022-12-02T21:27:29 IST" name="initializer" finished-at="2022-12-02T21:27:49 IST" duration-ms="20548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializer -->
-        <test-method signature="validateForgotPasswordText()[pri:1, instance:tests.ForgotPassword@72e5a8e]" started-at="2022-12-02T21:32:00 IST" name="validateForgotPasswordText" finished-at="2022-12-02T21:32:00 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateForgotPasswordText -->
-        <test-method signature="validateForgotPasswordLink()[pri:2, instance:tests.ForgotPassword@72e5a8e]" started-at="2022-12-02T21:32:00 IST" name="validateForgotPasswordLink" finished-at="2022-12-02T21:32:09 IST" duration-ms="8269" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="validateAllLinksTittle()[pri:2, instance:tests.loginPage@a3d9978]" started-at="2022-12-04T17:40:33 IST" name="validateAllLinksTittle" finished-at="2022-12-04T17:41:46 IST" duration-ms="72884" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Username : Admin']"}
-  (Session info: chrome=107.0.5304.108)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.2.2', revision: '683ccb65d6'
-System info: host: 'DESKTOP-9OOOF17', ip: '192.168.50.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a90fc2b3afb1f169c01c33ae58828115, findElement {using=xpath, value=//p[text()='Username : Admin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56852}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56852/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a90fc2b3afb1f169c01c33ae58828115]]>
+              <![CDATA[Links text validation failed: Lists differ at element [2]: OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ != OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ | Facebook expected [OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ] but found [OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ | Facebook]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Username : Admin']"}
-  (Session info: chrome=107.0.5304.108)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.2.2', revision: '683ccb65d6'
-System info: host: 'DESKTOP-9OOOF17', ip: '192.168.50.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a90fc2b3afb1f169c01c33ae58828115, findElement {using=xpath, value=//p[text()='Username : Admin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56852}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56852/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a90fc2b3afb1f169c01c33ae58828115
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
-at pageObject.loginPageObject.getname(loginPageObject.java:37)
-at pageObject.loginPageObject.getusername(loginPageObject.java:45)
-at tests.ForgotPassword.validateForgotPasswordLink(ForgotPassword.java:43)
+              <![CDATA[java.lang.AssertionError: Links text validation failed: Lists differ at element [2]: OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ != OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ | Facebook expected [OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ] but found [OrangeHRM - World's Most Popular Opensource HRIS | Secaucus NJ | Facebook]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:1103)
+at tests.loginPage.validateAllLinksTittle(loginPage.java:78)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,25 +43,28 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateForgotPasswordLink -->
-      </class> <!-- tests.ForgotPassword -->
+        </test-method> <!-- validateAllLinksTittle -->
+        <test-method signature="validateLogin()[pri:3, instance:tests.loginPage@a3d9978]" started-at="2022-12-04T17:41:49 IST" name="validateLogin" finished-at="2022-12-04T17:42:05 IST" duration-ms="15521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.loginPage@a3d9978]" started-at="2022-12-04T17:42:05 IST" name="teardown" finished-at="2022-12-04T17:42:15 IST" duration-ms="10813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.loginPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
