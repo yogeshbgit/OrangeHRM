@@ -11,14 +11,13 @@ import pageObject.loginPageObject;
 
 public class ForgotPassword extends BaseRepository{
 	
-	WebDriver driver;
-	loginPageObject lp;
+	public WebDriver driver;
+	public loginPageObject lp;
 	
 	@BeforeTest
 	public void initializer() throws IOException
 	{
-		driver = initialize();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver=initialize();
 		lp = new loginPageObject(driver);
 	}
 	

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -34,8 +36,10 @@ public class BaseRepository {
 		{
 			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
+			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		}
 		return driver;
 	}

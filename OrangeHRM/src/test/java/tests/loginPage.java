@@ -12,6 +12,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,13 +23,13 @@ import pageObject.loginPageObject;
 public class loginPage extends BaseRepository {
 	
 	public WebDriver driver;
-	loginPageObject lp;
+	public loginPageObject lp;
 	public String parendwindow;
 	@BeforeTest
 	public void initializer() throws IOException
 	{
+		
 		driver=initialize();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		parendwindow=driver.getWindowHandle();
 		lp = new loginPageObject(driver);
 	}
@@ -40,7 +41,7 @@ public class loginPage extends BaseRepository {
 	}
 	
 	
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	public void validateAllLinksTittle()
 	{
 		List<WebElement> alllinks = lp.getallinks();
@@ -78,14 +79,7 @@ public class loginPage extends BaseRepository {
 		Assert.assertEquals(actlinkstext, explinkstext,"Links text validation failed");
 	}
 	
-	@Test(priority=3)
-	public void validateLogin()
-	{
-		lp.getname();
-		lp.getusername();
-		lp.getpassword();
-		lp.getloginbutton();
-	}
+	
 	
 	@AfterTest
 	public void teardown()

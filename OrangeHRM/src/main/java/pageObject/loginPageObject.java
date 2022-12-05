@@ -16,7 +16,7 @@ public loginPageObject(WebDriver driver)
 	this.driver=driver;
 }
 
-By name = By.xpath("//p[text()='Username : Admin']");
+By name = By.xpath("//p[contains(.,'Username')]");
 By pass = By.xpath("//p[@class='oxd-text oxd-text--p'][2]");
 By username =  By.xpath("//input[@placeholder='Username']");
 By password = By.xpath("//input[@placeholder='Password']");
