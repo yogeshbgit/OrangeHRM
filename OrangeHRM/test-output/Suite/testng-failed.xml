@@ -6,12 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.homePage">
-        <methods>
-          <include name="validateMenuList"/>
-          <include name="validateinitialize"/>
-        </methods>
-      </class> <!-- tests.homePage -->
       <class name="tests.loginPage">
         <methods>
           <include name="validateAllLinksTittle"/>

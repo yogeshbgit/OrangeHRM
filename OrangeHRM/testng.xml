@@ -4,11 +4,19 @@
   <listeners> 
   <listener class-name="Resource.TestNGListener"/>
   </listeners>
-  <test thread-count="5" name="Test">
+<test thread-count="5" name="Test">
     <classes>
       <class name="tests.loginPage"/>
+    </classes>
+</test>
+<test thread-count="5" name="Test1">
+    <classes>     
       <class name="tests.ForgotPassword"/> 
+    </classes>
+</test>
+<test thread-count="5" name="Test2">
+    <classes>  
       <class name="tests.homePage"/> 
     </classes>
-  </test> <!-- Test -->
+</test> <!-- Test -->
 </suite> <!-- Suite -->

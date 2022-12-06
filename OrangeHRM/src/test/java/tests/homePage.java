@@ -48,10 +48,10 @@ public class homePage extends BaseRepository {
 		
 	}
 	
-//	@AfterTest
-//	public void teardown()
-//	{
-//		driver.close();
-//	}
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
+	}
 
 }
