@@ -1,65 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-06T10:33:27 IST" name="Suite" finished-at="2022-12-06T10:37:38 IST" duration-ms="250719">
+  <suite started-at="2022-12-08T20:59:20 IST" name="Default suite" finished-at="2022-12-08T21:00:01 IST" duration-ms="40894">
     <groups>
     </groups>
-    <test started-at="2022-12-06T10:33:27 IST" name="Test" finished-at="2022-12-06T10:36:38 IST" duration-ms="190798">
-      <class name="tests.loginPage">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:tests.loginPage@a3d9978]" started-at="2022-12-06T10:33:27 IST" name="initializer" finished-at="2022-12-06T10:35:17 IST" duration-ms="109730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializer -->
-        <test-method signature="validateLoginTittle()[pri:1, instance:tests.loginPage@a3d9978]" started-at="2022-12-06T10:35:17 IST" name="validateLoginTittle" finished-at="2022-12-06T10:35:17 IST" duration-ms="222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginTittle -->
-        <test-method signature="validateAllLinksTittle()[pri:2, instance:tests.loginPage@a3d9978]" started-at="2022-12-06T10:35:17 IST" name="validateAllLinksTittle" finished-at="2022-12-06T10:36:34 IST" duration-ms="76948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAllLinksTittle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.loginPage@a3d9978]" started-at="2022-12-06T10:36:34 IST" name="teardown" finished-at="2022-12-06T10:36:38 IST" duration-ms="3768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.loginPage -->
-    </test> <!-- Test -->
-    <test started-at="2022-12-06T10:36:42 IST" name="Test1" finished-at="2022-12-06T10:37:12 IST" duration-ms="30754">
-      <class name="tests.ForgotPassword">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:tests.ForgotPassword@3ad2e17]" started-at="2022-12-06T10:36:42 IST" name="initializer" finished-at="2022-12-06T10:37:03 IST" duration-ms="21116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializer -->
-        <test-method signature="validateForgotPasswordText()[pri:1, instance:tests.ForgotPassword@3ad2e17]" started-at="2022-12-06T10:37:03 IST" name="validateForgotPasswordText" finished-at="2022-12-06T10:37:04 IST" duration-ms="931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateForgotPasswordText -->
-        <test-method signature="validateForgotPasswordLink()[pri:2, instance:tests.ForgotPassword@3ad2e17]" started-at="2022-12-06T10:37:04 IST" name="validateForgotPasswordLink" finished-at="2022-12-06T10:37:09 IST" duration-ms="5293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateForgotPasswordLink -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ForgotPassword@3ad2e17]" started-at="2022-12-06T10:37:09 IST" name="teardown" finished-at="2022-12-06T10:37:12 IST" duration-ms="3398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.ForgotPassword -->
-    </test> <!-- Test1 -->
-    <test started-at="2022-12-06T10:37:13 IST" name="Test2" finished-at="2022-12-06T10:37:38 IST" duration-ms="24999">
-      <class name="tests.homePage">
-        <test-method is-config="true" signature="validateinitialize()[pri:0, instance:tests.homePage@b2c5e07]" started-at="2022-12-06T10:37:13 IST" name="validateinitialize" finished-at="2022-12-06T10:37:29 IST" duration-ms="16183" status="PASS">
+    <test started-at="2022-12-08T20:59:20 IST" name="Default test" finished-at="2022-12-08T21:00:01 IST" duration-ms="40894">
+      <class name="tests.adminTest">
+        <test-method is-config="true" signature="validateinitialize()[pri:0, instance:tests.adminTest@73e9cf30]" started-at="2022-12-08T20:59:20 IST" name="validateinitialize" finished-at="2022-12-08T20:59:42 IST" duration-ms="22573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateinitialize -->
-        <test-method signature="validateMenuList()[pri:1, instance:tests.homePage@b2c5e07]" started-at="2022-12-06T10:37:29 IST" name="validateMenuList" finished-at="2022-12-06T10:37:33 IST" duration-ms="3978" status="PASS">
+        <test-method signature="validateHeader()[pri:1, instance:tests.adminTest@73e9cf30]" started-at="2022-12-08T20:59:43 IST" name="validateHeader" finished-at="2022-12-08T20:59:50 IST" duration-ms="6702" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateMenuList -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.homePage@b2c5e07]" started-at="2022-12-06T10:37:33 IST" name="teardown" finished-at="2022-12-06T10:37:38 IST" duration-ms="4832" status="PASS">
+        </test-method> <!-- validateHeader -->
+        <test-method signature="validateSearchFilterByuserRole()[pri:3, instance:tests.adminTest@73e9cf30]" started-at="2022-12-08T20:59:50 IST" name="validateSearchFilterByuserRole" finished-at="2022-12-08T21:00:01 IST" duration-ms="10911" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.homePage -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- validateSearchFilterByuserRole -->
+      </class> <!-- tests.adminTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

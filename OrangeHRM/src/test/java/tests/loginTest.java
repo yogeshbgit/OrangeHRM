@@ -13,7 +13,7 @@ public class loginTest extends BaseRepository {
 
 	public WebDriver driver;
 	
-	@BeforeTest
+	@Test
 	public WebDriver validateLogin() throws IOException
 	{
 		driver = initialize();
@@ -31,5 +31,5 @@ public class loginTest extends BaseRepository {
 		driver.close();
 	}
 	
-	
+
 }

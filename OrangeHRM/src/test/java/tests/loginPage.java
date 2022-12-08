@@ -87,7 +87,7 @@ public class loginPage extends BaseRepository {
 		driver.quit();
 	}
 
-	
+
 
 
 }
